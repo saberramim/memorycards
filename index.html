@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Cards</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Memory Cards</h1>
+
+    <section id="add-card">
+      <h2>افزودن کارت جدید</h2>
+      <form id="cardForm">
+        <div>
+          <label for="front">پرسش</label>
+          <input
+            type="text"
+            id="front"
+            required
+            placeholder="مثلاً: پایتخت ایران کجاست؟"
+          />
+        </div>
+        <div>
+          <label for="back">پاسخ</label>
+          <input type="text" id="back" required placeholder="مثلاً: تهران" />
+        </div>
+        <button type="submit">افزودن کارت</button>
+      </form>
+    </section>
+
+    <section id="cards-section">
+      <h2>کارت‌ها</h2>
+      <div id="cardsContainer" class="cards-grid"></div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
